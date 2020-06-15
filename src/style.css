@@ -1,0 +1,56 @@
+
+
+.main {
+    background-color: #333;
+    overflow-y: hidden !important;
+}
+
+.st-bw {
+  width:450px !important;
+}
+
+label, .st-b6.st-bk.st-bl.st-bm.st-bn.st-bo.st-bp {
+  color: #fff !important;
+}
+
+.st-ai  {
+  /*display: inline-block;*/
+  width: auto;
+}
+
+
+
+.sidebar-content {
+  padding: 1rem 1rem !important;
+}
+
+.alert-warning {
+  background-color: #000;
+  border-color: #111;
+  width: 450px !important;
+  color:grey;
+}
+
+.alert-success {
+  background: rgba(9,171,59,.6);
+  color: #fff;
+  width:450px !important;
+}
+
+.reportview-container .main .block-container {
+  padding: 0rem 1rem 1rem;
+}
+
+.st-at {
+  background-color: rgba(9,171,59,.6);
+}
+
+.btn-outline-secondary {
+  color: #fff;
+}
+
+img {
+  margin: 0 auto;
+  margin-left: 1.5rem;
+  vertical-align: center
+}
