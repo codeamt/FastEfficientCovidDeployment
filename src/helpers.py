@@ -16,6 +16,29 @@ import requests
 from io import BytesIO
 
 
+class ImageEmbeddings():
+  '''
+  PyTorch Hook for storing linear features of images.
+  Args:
+    - m --> type:nn.Module --> Linear Layer of model.
+  '''
+  features=None
+  def __init__(self, m):
+        self.hook = m.register_forward_hook(self.hook_fn)
+        self.features = None
+
+  def hook_fn(self, module, input, output):
+        out = output.detach().cpu().numpy()
+        if isinstance(self.features, type(None)):
+            self.features = out
+        else:
+            self.features = np.row_stack((self.features, out))
+
+  def remove(self):
+        self.hook.remove()
+
+
+
 class TraceMallocMultiColMetric(LearnerCallback):
   """
   Fastai Learner Callback to measures peak RAM usage during each epoch.
