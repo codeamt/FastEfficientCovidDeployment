@@ -4,6 +4,8 @@ Streamlit inference service deployment submodule for Udacity's Machine Learning 
 <p align="center">
 <img src="https://drive.google.com/uc?export=view&id=1w8V7i8blteQFUvhMuizgKoRHytMzMuGF" width="80%" />
 </p>
+
+**DISCLAIMER:** THIS TOOL SHOULD NOT BE USED FOR MEDICAL DIAGNOSIS/REPLACE CONSULTING FROM A MEDICAL EXPERT AND SHOULD SERVE EDUCATIONAL PURPOSES ONLY.
  
 ## Build Instructions
 
